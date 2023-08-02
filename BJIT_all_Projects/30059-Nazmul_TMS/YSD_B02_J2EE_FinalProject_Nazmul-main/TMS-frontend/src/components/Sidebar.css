@@ -1,0 +1,154 @@
+/* Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0px; /* Adjust the top position as needed */
+  height: calc(100%); /* Adjust the height calculation as needed */
+  width: 60px;
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:  flex-start;/*; Update to align dropdowns below the items */
+  overflow: hidden;
+  z-index: 1;
+}
+.justify-content-end.navbar{
+  background-color: black;
+  z-index: 0;
+}
+.sidebar.open {
+  width: 200px;
+}
+
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.sidebar-nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Update to align dropdowns below the items */
+}
+
+.sidebar-nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar-nav li {
+  
+  /* position: relative;  */
+  /* Add position: relative for dropdown positioning */
+  display: block;
+  position: relative;
+  align-items: center;
+  margin-top: 10px;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar-nav li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-nav li svg {
+  margin-right: 10px;
+}
+
+.item-name {
+  flex-grow: 1;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none!important;
+  outline: none;
+  color:white;
+}
+.sidebar-nav li Link .item-name {
+  text-decoration: none!important;
+  outline: none;
+  color:white
+}
+.hidden {
+  display: none;
+}
+/* .sidebar-nav-list .dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display:flex;
+  background-color: #fff;
+  padding: 10px;
+  width: 200px;
+  list-style: none;
+}
+
+.sidebar-nav-list .dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.sidebar-nav-list .dropdown.has-dropdown:hover .dropdown-menu {
+  top: 0;
+} */
+
+
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 200px;
+  background-color: #fff;
+  padding: 0;
+  z-index: 2;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #eee;
+}

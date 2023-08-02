@@ -1,0 +1,56 @@
+/* AssignmentModal.css */
+.modal-overlay {
+  /* Styles for the modal overlay */
+}
+
+.modal-content {
+  /* Styles for the modal content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.assignment-form {
+  /* Styles for the form inside the modal */
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.assignment-form div {
+  /* Styles for each form field div */
+  margin-bottom: 15px;
+}
+
+.assignment-form label {
+  /* Styles for labels */
+  font-weight: bold;
+}
+
+.assignment-form input {
+  /* Styles for text inputs and file inputs */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.assignment-form button {
+  /* Styles for buttons */
+  padding: 8px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.assignment-form button[type="submit"] {
+  /* Additional styles for the submit button */
+  background-color: #28a745;
+  margin-left: 10px;
+}

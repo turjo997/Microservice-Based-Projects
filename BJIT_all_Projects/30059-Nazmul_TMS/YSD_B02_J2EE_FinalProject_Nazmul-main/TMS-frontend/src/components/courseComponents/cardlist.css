@@ -1,0 +1,14 @@
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:10px;
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  
+  .course-list .card {
+    margin-bottom: 20px;
+  }
+  

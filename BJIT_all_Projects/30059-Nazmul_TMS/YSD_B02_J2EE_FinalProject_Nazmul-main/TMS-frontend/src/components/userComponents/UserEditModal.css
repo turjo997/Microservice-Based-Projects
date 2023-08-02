@@ -1,0 +1,64 @@
+/* ProfileEditForm.css */
+
+.edit-form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    width: 400px;
+    margin-left: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 12px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-actions button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .preview-profile-picture {
+    max-width: 100%;
+    height: auto;
+    margin-top: 8px;
+  }
+  
+  .form-actions button {
+    width: 48%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-actions button:nth-child(2) {
+    background-color: #ccc;
+  }
+  

@@ -1,0 +1,95 @@
+/* .App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf9f6;
+}
+
+.col {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+/* .obscured-grid {
+  position: relative;
+}
+
+.obscured-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity as needed */
+  /* z-index: 1; 
+} */
+
+.app-container {
+    display: flex;
+    overflow: auto;
+  }
+  
+  .content-container {
+    flex: 1;
+    padding: 20px; /* Enable scrolling within the content container */
+    height: auto;
+    margin-left: 50px;
+    margin-top: 30px;
+     /* Adjust the height based on your layout */
+  }
+  .sidebar-open {
+    margin-left: 240px; /* Update with your sidebar width */
+  }
+  
+  .calendar-container{
+    height:calc(100vh - 120px);
+    overflow-y: hidden;
+    position: relative;
+  
+  }
+  .calendar-container .fc-view {
+    height: 50%; /* Set the height to fill the container */
+    overflow-y: auto ;
+  }
+  .calendar-container .fc-view.fc-dayGridMonth {
+    scrollbar-width: initial; /* Reset the width of the scrollbar in month tab */
+    scrollbar-color: initial; /* Reset the color of the scrollbar thumb and track in month tab */
+  }
+  .small-calendar {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    /* Add any additional styling to make the calendar smaller */
+  }
+  .calendar-container::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+  }
+  
+  .calendar-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  .calendar-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+  }
+  
+  .calendar-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  
+  /* .calendar-container .fc-view-harness.fc-scrollgrid-sync {
+    overflow: auto;
+    overflow-y: hidden;
+    margin-right: -16px; /* Compensate for the scrollbar width */
+    /*padding-right: 16px; Compensate for the scrollbar width
+  } */
+  
+  
+  
+  /* Add additional styles as needed */
+  

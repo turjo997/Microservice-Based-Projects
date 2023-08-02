@@ -1,0 +1,14 @@
+.login-card {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-card .card-title {
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-card .btn-block {
+    margin-top: 1.5rem;
+  }
+  

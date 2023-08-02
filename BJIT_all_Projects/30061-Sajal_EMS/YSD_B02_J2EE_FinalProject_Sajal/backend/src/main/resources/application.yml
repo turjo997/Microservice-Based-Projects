@@ -1,0 +1,27 @@
+jwt:
+  secret-key: "703373367639792442264529482B4D6251655468576D5A7134743777217A2543"
+spring:
+  cache:
+    type: redis
+    redis:
+      cache-null-values: true
+  application:
+    name: ems
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  datasource:
+    url: jdbc:mysql://localhost:6033/ems?createDatabaseIfNotExist=true
+    username: root
+    password: pass123
+management:
+  endpoint:
+    mappings:
+      enabled: true
+springdoc.swagger-ui.path: /api-docs/swagger-ui.html
+springdoc.api-docs.path: /api-docs/doc
+

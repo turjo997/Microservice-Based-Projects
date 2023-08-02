@@ -1,0 +1,27 @@
+/* CSS */
+.actions-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 13px;
+  }
+  
+  .assignment-actions {
+    display: flex;
+    gap: 8px; /* Add spacing between buttons */
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  /* Apply padding to cells in the "End Time" column */
+  td:nth-child(3) {
+    padding-right: 20px; /* Adjust the right padding as needed */
+    padding-bottom: 10px;
+}

@@ -1,0 +1,164 @@
+
+.resource-show {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+
+  .card {
+    max-width: 400px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+
+      .close-button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    .card-body {
+      padding: 20px;
+
+      p {
+        margin: 10px 0;
+      }
+
+      .photo img {
+        max-width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .cv {
+        margin-top: 20px;
+
+        a {
+          display: block;
+          background-color: #007bff;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+
+  /* Loading animation */
+  .loading::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Modal styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .modal-content {
+    max-width: 400px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+
+      .close-button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    .card-body {
+      padding: 20px;
+
+      p {
+        margin: 10px 0;
+      }
+
+      .photo img {
+        max-width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .cv {
+        margin-top: 20px;
+
+        a {
+          display: block;
+          background-color: #007bff;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+}

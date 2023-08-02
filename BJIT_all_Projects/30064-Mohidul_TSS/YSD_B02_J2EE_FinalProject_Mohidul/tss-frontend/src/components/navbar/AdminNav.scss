@@ -1,0 +1,29 @@
+
+.admin-nav {
+    background-color: #343a40;
+    padding: 10px 0;
+  
+    .nav-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .nav-item {
+      margin-left: 10px;
+  
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        cursor: pointer;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  

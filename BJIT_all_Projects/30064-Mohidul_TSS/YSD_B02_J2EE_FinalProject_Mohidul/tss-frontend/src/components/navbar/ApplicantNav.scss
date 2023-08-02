@@ -1,0 +1,34 @@
+.applicant-nav {
+    background-color: #343a40;
+    padding: 10px 0;
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .navbar-brand {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+      }
+  
+      .nav-links {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+  
+        .nav-link {
+          color: #fff;
+          text-decoration: none;
+          margin-left: 20px;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  

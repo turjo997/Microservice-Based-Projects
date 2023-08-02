@@ -1,0 +1,26 @@
+$2a$10$edGsVi8ESVJ/2LTlxLCVGOU6qInJxR4uZRXe3DK1DsYhxE2aOfIK2
+
+    {"numberOfElements": 4,
+    "first": true,
+    "empty": false
+
+"content": [
+        {
+            "id": 1,
+            "title": "Software Engineer Trainee J2EE",
+            "overview": "We will recruit 60 new engineers in three different domain such as Java EE, MERN Stack developer and SQA Engineer.",
+            "trainingType": "FULLTIME",
+            "closingDate": "2023-07-31",
+            "requiredEducation": "Bsc/Msc in CSE",
+            "hiringLocation": "Satarkul Dhaka",
+            "careerLevel": "ENTRY",
+            "vacancy": 20,
+            "skills": "You will Acquire ALL the SKILLS to demonstrate an EXPERTISE with Spring Framework in Your Job Interviews",
+            "duties": "You will Acquire ALL the SKILLS to demonstrate an EXPERTISE with Spring Framework in Your Job Interviews",
+            "salary": null,
+            "currency": null,
+            "minExp": 1.0,
+            "maxExp": 2.0
+    }]}
+
+<img id="barCode" alt="barcode" class="bar-code" style="margin-bottom:10px;"></img>
