@@ -1,0 +1,20 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: Iv1.5dc63e484f9dceae
+            clientSecret: a2620a93e599bac9e88b4e43df1ef7cfa0182429
+          google:
+            clientId: 432979863157-6rj6h9tlsv59qpnr6ptttjso88g66u6i.apps.googleusercontent.com
+            clientSecret: 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
+          facebook:
+            clientId: 1366305567595458
+            clientSecret: 0920e157a1d6f90abde578a9e45ecdf1
+            provider:
+              facebook:
+                authorizationUri: https://www.facebook.com/v12.0/dialog/oauth
+                tokenUri: https://graph.facebook.com/v12.0/oauth/access_token
+                userInfoUri: https://graph.facebook.com/v12.0/me
+                userNameAttribute: id
