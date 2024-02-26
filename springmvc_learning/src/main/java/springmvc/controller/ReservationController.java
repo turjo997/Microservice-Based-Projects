@@ -30,5 +30,19 @@ public class ReservationController {
 	}
 	
 	
+	
+	
+	@RequestMapping("/radioRequest")
+	public String radioRequest() {
+		return "radio-request";
+	}
+	
+	@RequestMapping("/radioForm") 
+	public String radioForm(Model model) {
+		Reservation res = new Reservation();
+		model.addAttribute("reservation" , res);
+		return "radio-page";  
+	}
+	
 
 }

@@ -19,5 +19,20 @@
 	<%=reservation.getFirstName()%>
 	<br> Last Name :
 	<%=reservation.getLastName()%>
+	<br> Gender :
+	<%=reservation.getGender()%>
+	<br> Meals:
+	<%
+	for (String s : reservation.getFood()) {
+	%>
+
+	<h1><%=s%></h1>
+	<%
+	}
+	%>
+	Leaving From : <%=reservation.getCityFrom()%>
+	<br> Going To : <%=reservation.getCityTo()%>
+
+
 </body>
 </html>
