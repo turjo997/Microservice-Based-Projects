@@ -1,6 +1,11 @@
 package springmvc.controller;
 
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
 import java.util.List;
+
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,6 +14,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import springmvc.dao.EmpDao;
 import springmvc.model.Emp;
@@ -18,6 +25,8 @@ public class EmpController {
 	
 	@Autowired
 	EmpDao dao;
+	
+	private static final String UPLOAD_DIRECTORY ="/images";  
 	
 	@RequestMapping("/index")
 	public String indexPage() {
@@ -31,8 +40,30 @@ public class EmpController {
 	}
 	
 	@RequestMapping(value = "/save" , method=RequestMethod.POST)
-	public String save(@ModelAttribute("emp")Emp emp) {
-	   dao.save(emp);
+	public String save(@RequestParam CommonsMultipartFile file,HttpSession session , 
+			@ModelAttribute("emp")Emp emp) throws Exception{
+	
+       
+        ServletContext context = session.getServletContext();  
+        String path = context.getRealPath(UPLOAD_DIRECTORY);  
+        String filename = file.getOriginalFilename();  
+      
+        String filePath = path+"/"+filename;
+        System.out.println(path+" "+filename);        
+      
+        byte[] bytes = file.getBytes();  
+        
+        BufferedOutputStream stream = new BufferedOutputStream(  
+                new FileOutputStream(path+"/"+filename));  
+        
+        stream.write(bytes);  
+        stream.flush();  
+        stream.close();  
+        
+        emp.setImage(filePath);
+        dao.save(emp);
+       
+        
 	   return "redirect:/viewemp";
 	}
 	

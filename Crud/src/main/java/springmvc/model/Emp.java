@@ -6,6 +6,7 @@ public class Emp {
 	private String name;
 	private float salary;
 	private String designation;
+	private String image;
 
 	public int getId() {
 		return id;
@@ -37,5 +38,13 @@ public class Emp {
 
 	public void setDesignation(String designation) {
 		this.designation = designation;
+	}
+	
+	public String getImage() {
+		return image;
+	}
+	
+	public void setImage(String image) {
+		this.image = image;
 	}
 }

@@ -24,7 +24,8 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://localhost:3306/employeedb"></property>
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/employeedb"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="root"></property>
 	</bean>
@@ -37,5 +38,7 @@
 		<property name="template" ref="jt"></property>
 	</bean>
 
+	<bean name="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
 
 </beans>

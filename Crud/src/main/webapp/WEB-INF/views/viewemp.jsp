@@ -20,11 +20,15 @@
 			<th>Name</th>
 			<th>Salary</th>
 			<th>Designation</th>
+			<th>Image</th>
 			<th>Edit</th>
 			<th>Delete</th>
 		</tr>
 		<%
 		List<Emp> employees = (List<Emp>) request.getAttribute("list");
+		
+		String path = "E:\\BJIT github documents\\Microservices Project\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\Crud\\images";
+
 		for (Emp emp : employees) {
 		%>
 		<tr>
@@ -32,6 +36,7 @@
 			<td><%=emp.getName()%></td>
 			<td><%=emp.getSalary()%></td>
 			<td><%=emp.getDesignation()%></td>
+			<td><img src="<%=emp.getImage()%>"/></td>
 			<td><a href="editemp/<%=emp.getId()%>">Edit</a></td>
 			<td><a href="deleteemp/<%=emp.getId()%>">Delete</a></td>
 		</tr>
