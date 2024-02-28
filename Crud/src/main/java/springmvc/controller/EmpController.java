@@ -43,7 +43,7 @@ public class EmpController {
 		 return "viewemp";    
 	}
 
-	@RequestMapping(value = "/editemp/{id}")
+	@RequestMapping(value = "/editemp/{id}")  
 	public String edit(@PathVariable int id , Model m) {
 		Emp emp = dao.getEmpById(id);
 		m.addAttribute("command",emp);  
@@ -62,5 +62,23 @@ public class EmpController {
         dao.delete(id);    
         return "redirect:/viewemp";    
     }     
+    
+    
+    
+    @RequestMapping(value="/viewemppage/{pageid}")    
+    public String viewByPage(@PathVariable int pageid,Model m){    
+        int total=5;    
+        if(pageid==1){}    
+        else{    
+            pageid=(pageid-1)*total+1;    
+        }    
+        System.out.println(pageid);  
+        List<Emp> list=dao.getEmployeesByPage(pageid,total);    
+          m.addAttribute("list", list);  
+        return "viewemppage";    
+    }  
+    
+    
+   
 	
 }
