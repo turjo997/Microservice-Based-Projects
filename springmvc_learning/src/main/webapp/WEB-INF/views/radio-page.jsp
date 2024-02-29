@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form:form action="submitForm" modelAttribute="reservation">  
+	<form:form action="submitForm">  
         First name: <form:input path="firstName" />
 		<br>
 		<br>  

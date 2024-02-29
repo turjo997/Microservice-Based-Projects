@@ -29,8 +29,7 @@ public class ReservationController {
 		 return "confirmation-page";
 	}
 	
-	
-	
+
 	
 	@RequestMapping("/radioRequest")
 	public String radioRequest() {
@@ -40,7 +39,7 @@ public class ReservationController {
 	@RequestMapping("/radioForm") 
 	public String radioForm(Model model) {
 		Reservation res = new Reservation();
-		model.addAttribute("reservation" , res);
+		model.addAttribute("command" , res);
 		return "radio-page";  
 	}
 	
