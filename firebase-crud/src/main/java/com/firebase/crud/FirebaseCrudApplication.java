@@ -36,6 +36,8 @@ public class FirebaseCrudApplication {
 
 
 		SpringApplication.run(FirebaseCrudApplication.class, args);
+
+		System.out.println("Hello world");
 	}
 
 }
